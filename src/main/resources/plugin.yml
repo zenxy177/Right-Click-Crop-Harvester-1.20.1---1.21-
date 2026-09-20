@@ -1,0 +1,21 @@
+name: SagTikHasat
+version: 1.0.0
+main: com.wrait.harvester.HarvesterPlugin
+api-version: '1.20'
+author: Wrait
+description: Olgunlaşmış ekinleri sağ tık ile otomatik toplayıp yeniden eken Minecraft Spigot/Paper eklentisi.
+
+commands:
+  sagtikhasat:
+    description: Sağ Tık Hasat eklenti komutları.
+    aliases: [rcharvest, sth]
+    permission: sagtikhasat.admin
+    usage: /sagtikhasat reload
+
+permissions:
+  sagtikhasat.use:
+    description: Sağ tık ile ekin toplayabilme izni.
+    default: true
+  sagtikhasat.admin:
+    description: Eklenti ayarlarını yenileme izni.
+    default: op

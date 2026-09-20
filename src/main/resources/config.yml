@@ -1,0 +1,55 @@
+# =========================================================
+#             Sağ Tık Hasat (Right-Click Crop Harvester)
+#                    Yapılandırma Dosyası
+# =========================================================
+
+# Ekin bazlı aktif/pasif ayarları
+enabled-crops:
+  WHEAT: true
+  CARROTS: true
+  POTATOES: true
+  BEETROOTS: true
+  NETHER_WART: true
+  COCOA: true
+
+# Çapa (Hoe) kullanımı zorunlu olsun mu? (Dengeleme için varsayılan: true)
+# true: Oyuncunun elinde bir çapa (Tahta, Taş, Demir, Altın, Elmas, Netherit) olmak zorundadır.
+# false: Elle de toplanabilir.
+require-hoe: true
+
+# Hasat yapıldığında çapanın canı (durability) düşsün mü? (Dengeleme için varsayılan: true)
+# Çapa üzerindeki Kırılmazlık (Unbreaking) büyüsü hesaba katılır.
+damage-hoe: true
+
+# Elindeki çapada Servet (Fortune) büyüsü varsa ekstra ürün düşsün mü?
+enable-fortune: true
+
+# Ürünler ve tohumlar doğrudan oyuncu envanterine mi aktarılsın?
+# true: Doğrudan envantere eklenir (envanter doluysa yere düşer).
+# false: Yere saçılır.
+auto-inventory: false
+
+# Yeniden ekim için düşen ganimetten veya envanterden 1 tohum harcansın mı?
+# true: Tohum yoksa ekin yeniden ekilmez ve uyarı verilir.
+consume-seed: true
+
+# Olgunlaşmamış ekine sağ tıklandığında oyuncuya bilgi verilsin mi?
+notify-unripe: true
+
+# Ses ve Efekt Ayarları
+effects:
+  play-sound: true
+  sound-name: "BLOCK_CROP_BREAK"
+  play-particles: true
+  particle-name: "VILLAGER_HAPPY"
+
+# Mesajlar
+messages:
+  prefix: "&8[&aSağTıkHasat&8] "
+  no-permission: "&cBu komutu kullanmak için yetkiniz bulunmuyor!"
+  config-reloaded: "&aKonfigürasyon başarıyla yeniden yüklendi."
+  hoe-required: "&cEkinleri toplayabilmek için elinizde bir çapa olmalıdır!"
+  unripe-crop: "&cBu ekin henüz olgunlaşmadı!"
+  no-seed: "&cEkinin yeniden ekilmesi için yeterli tohumunuz yok!"
+  inventory-full: "&eEnvanteriniz dolu olduğu için bazı ürünler yere düştü!"
+  info-message: "&aSağ Tık Hasat aktif! Olgunlaşmış ekinlere çapa ile sağ tıklayarak toplayabilirsin."
